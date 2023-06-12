@@ -3,10 +3,10 @@ var calledNumbers = new Array();
 var goal = "linha";
 
 function init() {
-    generateNewCard();
+    gerarBingo();
 }
 
-function generateNewCard() {
+function gerarBingo() {
     resetUsedNumbers();
     for (var i = 0; i < 25; i++) {
         if (i == 12) 
@@ -38,9 +38,9 @@ function resetUsedNumbers() {
     }
 }
 
-function generateAnotherCard() {
+function gerarOutroBingo() {
     resetUsedNumbers();
-    generateNewCard();
+    gerarBingo();
     resetSquareColours();
 }
 
@@ -153,7 +153,7 @@ function checkHorizontalBingo() {
                 var sq1 = document.getElementById('sq' + (i + 12));
                 var sq2 = document.getElementById('sq' + (i + 13));
                 var sq3 = document.getElementById('sq' + (i + 14));
-                var sq4 = document.getElementById('sq' + (i + 15));
+                var sq4 = document.getElementById('sq' + (i + 15)); 
                 var sq5 = document.getElementById('sq' + (i + 16));
                 break;
             case 4: 
