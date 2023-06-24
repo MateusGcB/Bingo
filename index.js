@@ -116,7 +116,7 @@ function gerarNumeros () {
 }
 
  
-
+    // Reiniciar o jogo
 function reiniciarPagina() {
 
     location.reload();
